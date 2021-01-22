@@ -13,7 +13,6 @@ use crate::pass_1::{
 };
 
 // Represents the result from the second pass
-#[derive(Debug)]
 pub struct AssemblerResult {
 	pub filename: String,
 	pub start: u16,
