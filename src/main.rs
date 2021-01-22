@@ -38,10 +38,8 @@ fn main() {
 				process::exit(1);
 			}
 
-		// Full disc
-		} else if arg == "-d" || arg == "--disc" {
-			config.addr_start = Some(0);
-			config.addr_end = Some(u16::MAX);
+		// No address
+		} else if arg == "-d" || arg == "--drop_addr" {
 			config.write_addr = false;
 
 		// Start address

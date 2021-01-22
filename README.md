@@ -5,11 +5,11 @@
 Just run `cargo build --release` if you have cargo installed. If you don't then you should [install it](https://doc.rust-lang.org/stable/book/ch01-01-installation.html) before downloading this.
 
 ## Usage
-Usage: `./asm6502 [-o out] [-d] [-s addr] [-e addr] [files]`  
+Usage: `./asm6502 [-o out] [-d] [-s addr] [-e addr] [files]`
 
 ### Options
 - `-o output`/`--out output`: Set the output file (default is `a.out`)
-- `-d`/`--disc`: Stops the assembler from setting the first two bytes of the file to be the address where the program is in memory and outputs the entire 64 kilobyte RAM disc image
+- `-d`/`--drop_addr`: Stops the assembler from setting the first two bytes of the file to be the address where the program is in memory
 - `-s addr`/`--start addr`: Sets the first address to be placed in the output (inclusive; must be hexadecimal)
 - `-e addr`/`--end addr`: Sets the last address to be placed in the output (inclusive; must be hexadecimal)
 
